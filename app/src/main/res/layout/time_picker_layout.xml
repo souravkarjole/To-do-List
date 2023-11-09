@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/background_layout_time">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_picker_style"
+            android:headerBackground="@drawable/time_picker_header_background"
+            android:numbersSelectorColor="@color/app_color_medium"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/repeatRemainder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:checked="false"
+            android:text="Repeat remainder"
+            android:textSize="16sp"
+            app:switchPadding="10dp"
+            app:thumbTint="@color/app_color_medium"
+            app:trackTint="@color/app_color_thin" />
+
+        <LinearLayout
+            android:id="@+id/hide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Sun"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Mon"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Tue"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Wed"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Thu"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Fri"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:focusable="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="Sat"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@drawable/selected_text_color"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/app_color_thin_transparent"
+                android:backgroundTintMode="src_atop"
+                android:background="@drawable/selected_circular_color"/>
+            </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/hide2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Set time"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                       android:id="@+id/line1"
+                       android:layout_below="@id/set"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="15dp">
+
+                       <TextView
+                           android:id="@+id/noTime"
+                           android:layout_width="67dp"
+                           android:layout_height="28dp"
+                           android:text="No time"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:layout_marginEnd="10dp"
+                           android:fontFamily="sans-serif-condensed"
+                           android:gravity="center"
+                           android:textColor="#808080"
+                           android:backgroundTint="@color/app_color_thin_transparent"
+                           android:backgroundTintMode="src_atop"
+                           android:background="@drawable/extra_box"/>
+
+                       <TextView
+                           android:id="@+id/first"
+                           android:layout_width="67dp"
+                           android:layout_height="28dp"
+
+                           android:text="10:00 am"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="sans-serif-condensed"
+                           android:gravity="center"
+                           android:textColor="#808080"
+                           android:backgroundTint="@color/app_color_thin_transparent"
+                           android:backgroundTintMode="src_atop"
+                           android:background="@drawable/extra_box"/>
+
+                       <TextView
+                           android:id="@+id/second"
+                           android:layout_width="67dp"
+                           android:layout_height="28dp"
+                           android:layout_marginStart="10dp"
+                           android:text="12:00 pm"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="sans-serif-condensed"
+                           android:gravity="center"
+                           android:textColor="#808080"
+                           android:backgroundTint="@color/app_color_thin_transparent"
+                           android:backgroundTintMode="src_atop"
+                           android:background="@drawable/extra_box"/>
+
+                       <TextView
+                           android:id="@+id/third"
+                           android:layout_width="67dp"
+                           android:layout_height="28dp"
+                           android:layout_marginStart="10dp"
+                           android:text="12:00 am"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="sans-serif-condensed"
+                           android:gravity="center"
+                           android:textColor="#808080"
+                           android:backgroundTint="@color/app_color_thin_transparent"
+                           android:backgroundTintMode="src_atop"
+                           android:background="@drawable/extra_box"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@id/line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/fourth"
+                            android:layout_width="67dp"
+                            android:layout_height="28dp"
+                            android:text="06:00 pm"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textColor="#808080"
+                            android:backgroundTint="@color/app_color_thin_transparent"
+                            android:backgroundTintMode="src_atop"
+                            android:background="@drawable/extra_box"/>
+
+                        <TextView
+                            android:id="@+id/fifth"
+                            android:layout_width="67dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="10dp"
+                            android:text="08:00 pm"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textColor="#808080"
+                            android:backgroundTint="@color/app_color_thin_transparent"
+                            android:backgroundTintMode="src_atop"
+                            android:background="@drawable/extra_box"/>
+
+                        <TextView
+                            android:id="@+id/sixth"
+                            android:layout_width="67dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="10dp"
+                            android:text="10:00 pm"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textColor="#808080"
+                            android:backgroundTint="@color/app_color_thin_transparent"
+                            android:backgroundTintMode="src_atop"
+                            android:background="@drawable/extra_box"/>
+                    </LinearLayout>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CANCEL"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:textColor="@color/app_color_medium"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DONE"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/app_color_medium"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

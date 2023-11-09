@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="app_color_thin">#B6A5DF</color>
+    <color name="app_color_thin_transparent">#59D7D1E4</color>
+    <color name="app_color_medium">#8D72D1</color>
+    <color name="light_white">#F4F0F0</color>
+
+    
+
+</resources>

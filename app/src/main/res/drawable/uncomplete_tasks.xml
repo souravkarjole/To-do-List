@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The background circle with a green background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/red" /> <!-- Green color -->
+        </shape>
+    </item>
+
+    <item>
+        <rotate
+            android:fromDegrees="50"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:drawable="@drawable/nav_add"/>
+    </item>
+</layer-list>

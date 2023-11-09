@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TabLayout" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.TabLayout" parent="Base.Theme.TabLayout" />
+
+    <style name="DialogAnimation">
+
+        <item name="android:windowEnterAnimation">@anim/slide_up_animation</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_animation</item>
+    </style>
+</resources>

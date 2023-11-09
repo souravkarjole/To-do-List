@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The background circle with a green background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#008000" /> <!-- Green color -->
+        </shape>
+    </item>
+
+    <!-- The "done" (tick image) on top of the circle -->
+    <item android:drawable="@drawable/done" />
+</layer-list>

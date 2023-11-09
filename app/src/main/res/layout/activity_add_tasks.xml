@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTasks">
+
+    <TextView
+        android:id="@+id/updateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New One!"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell me about your Task :)"
+        android:fontFamily="@font/actor"
+        android:textColor="#808080"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What to add?"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#494848"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="task"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="55dp"
+        android:maxLength="30"
+        android:inputType="textCapSentences"
+        android:backgroundTint="#808080"
+        android:textColorHint="#808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#494848"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:focusable="false"
+            android:editable="true"
+            android:hint="set date"
+            android:inputType="date"
+            android:backgroundTint="#808080"
+            android:textColorHint="#808080" />
+
+        <ImageView
+            android:id="@+id/calendarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/cancelDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/cancel" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/createNew"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Create"/>
+</LinearLayout>

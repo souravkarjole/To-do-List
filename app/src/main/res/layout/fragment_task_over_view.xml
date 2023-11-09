@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskOverView">
+
+    <RelativeLayout
+        android:id="@+id/hi"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/taskOverView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Task Overview" />
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskOverView"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/CompletedTasksBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/box">
+
+                <TextView
+                    android:id="@+id/completedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Completed Tasks"
+                    android:textColor="#5E5E5E"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/box">
+
+                <TextView
+                    android:id="@+id/pendingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Pending Tasks"
+                    android:textColor="#5E5E5E"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:fitsSystemWindows="true"
+            android:layout_below="@id/a"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks Pie-chart"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

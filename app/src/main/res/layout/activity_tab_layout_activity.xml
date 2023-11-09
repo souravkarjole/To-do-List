@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabLayoutActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="To-Do List"
+        android:paddingTop="10dp"
+        app:subtitle="Welcome Back!"
+        app:titleTextAppearance="@style/title_style"
+        app:subtitleTextAppearance="@style/sub_title_style"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:tabSelectedTextColor="#F4F0F0"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabGravity="fill"
+        app:tabIndicatorGravity="stretch"
+        app:tabBackground="@drawable/custom_tab"
+        android:background="@android:color/transparent"
+        app:tabTextColor="#3C3C3C"
+        app:tabIndicator="@drawable/selected_tab"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationMode="fade"
+        app:tabTextAppearance="@style/tab_text_style"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
